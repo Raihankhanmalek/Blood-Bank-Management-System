@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Page Title -->
+  <title>Blood Bank Management System</title>
+
+  <!-- Favicon Icon -->
+  <link rel="shortcut icon" href="/static/landing_page/assets/images/favicon.png">
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="/static/landing_page/assets/css/animate.css">
+  <link rel="stylesheet" href="/static/landing_page/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/static/landing_page/assets/css/all.css">
+  <link rel="stylesheet" href="/static/landing_page/assets/css/slick.css">
+  <link rel="stylesheet" href="/static/landing_page/assets/css/fancybox.css">
+  <link rel="stylesheet" href="/static/landing_page/assets/css/style.css">
+</head>
+
+
+<body>
+
+  <!--preloader start-->
+  <div class="preloader">
+    <h1>Blood Bank Management System</h1>
+    <div class="preload-progress">
+      <span></span>
+    </div>
+  </div>
+  <!--preloader end-->
+
+  <!-- heder Start -->
+  <div class="header_bottom">
+    <div class="container">
+      <div class="row align-items-center position-relative">
+        <div class="col-xl-2 col-lg-2 col-md-4 col-6">
+          <div class="header_logo">
+            <a href="/">
+              <h3 style="color: white;">B B M S</h3>
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-8 col-lg-8 d-none d-xxl-block d-xl-block">
+          <ul class="main_menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Service">Service</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <!-- mobile menu bar -->
+        <div class="col-lg-10 col-md-8 col-6 d-block d-xxl-none d-xl-none">
+          <div class="d-flex align-items-center gap-2 justify-content-end">
+            <div class="dropdown dropdown_search">
+              <button class="search-btn " data-bs-toggle="dropdown" aria-expanded="true"><i
+                  class="fa-solid fa-magnifying-glass"></i></button>
+              <div class="dropdown-menu dropdown-menu-end" data-popper-placement="bottom-end">
+                <form class="search-form d-flex align-items-center gap-2">
+                  <input type="text" placeholder="Search..." class="theme-input bg-transparent">
+                  <button type="submit" class="submit-btn">Go</button>
+                </form>
+              </div>
+            </div>
+            <div class="mobile_menu">
+              <button class="header_toggle_btn bg-transparent border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvas-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!-- header end -->
+
+  <!-- hero section start -->
+  <section class="hm1_hero_slider" id="home">
+    <div class="hm1_hero hm1 hm_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hm1_content">
+              <h3>Donate blood,save life !</h3>
+              <h1>Donate Blood And Inspires Others.</h1>
+              <a href="{% url 'patient-login' %}" class="explore_now red_btn">Login</a>
+              <a href="{% url 'patient-register' %}" class="explore_now red_btn">Registration</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hm1_hero hm13  hm_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="hm1_content">
+              <h3>Donate blood,save life !</h3>
+              <h1>Donate Blood And Inspires Others.</h1>
+              <a href="{% url 'patient-login' %}" class="explore_now red_btn">Login</a>
+              <a href="{% url 'patient-register' %}" class="explore_now red_btn">Registration</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+  <!-- register & donate start -->
+  <section class="register_donate ptb-115 gray">
+    <div class="container">
+      <div class="row g-0 register_top">
+
+
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="/static/landing_page/assets/images/r1.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="/static/landing_page/assets/images/icon/d1.png" alt=""></span>
+                <a href="#">
+                  <h5>Blood Donation</h5>
+                </a>
+                <p>Blood donation is the ultimate act of humanity. Step forward and make a life-changing difference
+                  today.
+                  Your contribution can mean the world to someone in need."</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12 mb-4">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="/static/landing_page/assets/images/r2.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="/static/landing_page/assets/images/icon/d2.png" alt=""></span>
+                <a href="#">
+                  <h5>Why give blood?</h5>
+                </a>
+                <p>Donated blood is used in various medical treatments, surgeries, and emergency situations to save the
+                  lives of patients suffering from undergoing complex medical procedures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-14">
+          <div class="register_donate_item">
+            <div class="donate_item_top">
+              <div class="donate_img">
+                <img src="/static/landing_page/assets/images/r3.jpg" alt="">
+              </div>
+              <div class="donate_content text-center">
+                <span><img src="/static/landing_page/assets/images/icon/d3.png" alt=""></span>
+                <a href="#">
+                  <h5>How Denations Help?</h5>
+                </a>
+                <p>In cases of accidents, natural disasters, or sudden medical emergencies, having an adequate supply of
+                  blood readily available can be life-saving, as it provides the necessary support.</p>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- register & donate end -->
+
+  <!-- help the people start -->
+  <div id="About">
+    <section class="help_people ptb-115 overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center g-lg-5 g-xl-5 g-xxl-5">
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12 mb-4 mb-xl-0 mb-lg-0 mb-md-0">
+            <div class="help_wrap position-relative">
+              <img src="/static/landing_page/assets/images/help1.png" alt="">
+              <img src="/static/landing_page/assets/images/help2.png" alt="" class="help_over">
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6 col-12">
+            <div class="help_content">
+              <p class="red_color">Help The People in Need</p>
+              <h2>Welcome to Blood
+                Donors Organization</h2>
+              <p>Blood is essential for various surgical procedures, including organ transplants,
+                cardiovascular surgeries, and obstetric procedures. Having a sufficient blood supply
+                ensures that these surgeries can be performed safely and effectively.</p>
+              <div class="d-flex justify-content-between">
+                <ul>
+                  <li><i class="fa-solid fa-angles-right"></i> Good Service</li>
+                  <li><i class="fa-solid fa-angles-right"></i> Help People</li>
+                  <li><i class="fa-solid fa-angles-right"></i> Hugine Tools</li>
+                </ul>
+                <ul>
+                  <li><i class="fa-solid fa-angles-right"></i> 24h Service</li>
+                  <li><i class="fa-solid fa-angles-right"></i> Health Check</li>
+                  <li><i class="fa-solid fa-angles-right"></i> Blood Bank</li>
+                </ul>
+              </div>
+              <a href="{% url 'donor-register' %}" class="explore_now red_btn">Register Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- help the people end -->
+
+  <!-- counter start -->
+  <section class="hm1_counter">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="/static/landing_page/assets/images/icon/c1.png" alt="">
+            <h2><span class="count">25</span></h2>
+            <p>Year experience</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="/static/landing_page/assets/images/icon/c2.png" alt="">
+            <h2><span class="count">3225</span></h2>
+            <p>happy donors</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mb-5">
+          <div class="counter_item text-center">
+            <img src="static/landing_page/assets/images/icon/c3.png" alt="">
+            <h2><span class="count">90</span></h2>
+            <p>total awards</p>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+          <div class="counter_item text-center">
+            <img src="/static/landing_page/assets/images/icon/c4.png" alt="">
+            <h2><span class="count">3168</span></h2>
+            <p>happy recipient</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- counter end -->
+
+  <!-- service start -->
+  <section class="service ptb-115">
+    <div class="container">
+      <div class="row mb-5 ">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <div id="Service">
+              <p>What We do</p>
+              <h2>our best services</h2> <br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center g-0 service_wrap">
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_1">
+            <div class="service_item">
+              <div class="img">
+                <img src="/static/landing_page/assets/images/s1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_2">
+            <div class="service_content ps-5">
+              <h1>01</h1>
+              <a href="#">
+                <h4>Blood Donation</h4>
+              </a>
+              <p> Each donation has the potential to save multiple lives, as blood is an indispensable resource
+                in various medical procedures. Beyond its immediate impact, blood donation fosters a sense of
+                unity and shared responsibility, reminding us of our interconnectedness and the power of
+                collective action. </p>
+              
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_3">
+            <div class="service_content text-end pe-5">
+              <h1>02</h1>
+              <a href="#">
+                <h4>Health Check</h4>
+              </a>
+              <p>Donors are usually asked to provide information about their medical history, including
+                any past illnesses, surgeries, or medical conditions. This helps identify any potential
+                risk factors or contraindications for donation.</p>
+            
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_4">
+            <div class="service_item">
+              <div class="img">
+                <img src="/static/landing_page/assets/images/s2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 mb-5 order_5">
+            <div class="service_item">
+              <div class="img">
+                <img src="/static/landing_page/assets/images/s3.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-6  col-12 order_6">
+            <div class="service_content ps-5">
+              <h1>03</h1>
+              <a href="#">
+                <h4>Blood Bank</h4>
+              </a>
+              <p>blood donation is important because it saves lives, supports medical treatments,
+                and contributes to public health by ensuring a reliable and safe supply of blood
+                for patients in need. By donating blood, individuals can make a direct and meaningful
+                impact on the health and well-being of others in their communities.</p>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service end -->
+
+  <!-- call now start -->
+  <div id="Contact">
+    <section class="hm1_counter call_now">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <div class="call_content text-center">
+              <span class="call_over"><i class="fa-solid fa-phone"></i></span>
+              <p>START DONATING</p>
+              <a href="tell:7984422305">
+                <h2>Call Now: <span>+91 7359902234</span></h2>
+              </a>
+              <ul class="d-flex gap-4 justify-content-center flex-wrap">
+                <li>
+                  <span><i class="fa-solid fa-location-dot"></i></span>
+                  <span>Civil Hospital - Ahmedabad</span>
+                </li>
+                <li>
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <a href="mailto:company@domin.com">Donate@gmail.com</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </section>
+  <!-- call now end -->
+
+  <!-- testimonial start -->
+  <section class="testimonial ptb-115">
+    <div class="container">
+      <div class="row ">
+        <div class="col-12 mb-5">
+          <div class="common_title text-center">
+            <p>testimonial</p>
+            <h2>What Our Clients Say</h2>
+          </div>
+        </div>
+
+        <div class="testi_slider slider-spacing">
+          <div class="testi_slider_item">
+            <div class="testi_content">
+              <div class="star">
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+              </div>
+              <p>Donating blood has been one of the most rewarding experiences of my life.
+                Knowing that a single donation can potentially save multiple lives is incredibly fulfilling.
+                The staff at the donation center were friendly and professional.</p>
+            </div>
+            <div class="testi_owner d-flex gap-4 align-items-center">
+              <div class="testi_img img">
+                <a href="#"><img src="/static/landing_page/assets/images/ts1.png" alt=""></a>
+              </div>
+              <div class="testi_name">
+                <h5>Dr.Ajay Patel</h5>
+                <p>Doctor</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi_slider_item">
+            <div class="testi_content">
+              <div class="star">
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+              </div>
+              <p>I've been donating blood regularly for years, and it's always a positive experience.
+                Not only does it feel great to know that my donation is helping those in need, but the
+                health benefits for myself are also a bonus.I would highly recommend blood donation</p>
+            </div>
+            <div class="testi_owner d-flex gap-4 align-items-center">
+              <div class="testi_img img">
+                <a href="#"><img src="/static/landing_page/assets/images/ts2.png" alt=""></a>
+              </div>
+              <div class="testi_name">
+                <h5>Rakesh shah</h5>
+                <p>Teacher</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi_slider_item">
+            <div class="testi_content">
+              <div class="star">
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+              </div>
+              <p>The staff are always welcoming and make the process easy and comfortable.
+                I encourage everyone who is eligible to donate blood - it truly makes a difference.
+                The staff are always welcoming and make the process easy and comfortable.
+                it truly makes a difference.</p>
+            </div>
+            <div class="testi_owner d-flex gap-4 align-items-center">
+              <div class="testi_img img">
+                <a href="#"><img src="/static/landing_page/assets/images/ts3.png" alt=""></a>
+              </div>
+              <div class="testi_name">
+                <h5>Nirav Modi</h5>
+                <p>Bank</p>
+              </div>
+            </div>
+          </div>
+          <div class="testi_slider_item">
+            <div class="testi_content">
+              <div class="star">
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+                <span><i class="fa-solid fa-star"></i></span>
+              </div>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur
+                cupidatatproident,
+                culpa qui officia deserunt mollit</p>
+            </div>
+            <div class="testi_owner d-flex gap-4 align-items-center">
+              <div class="testi_img img">
+                <a href="#"><img src="/static/landing_page/assets/images/ts1.png" alt=""></a>
+              </div>
+              <div class="testi_name">
+                <h5>Nora Fateha</h5>
+                <p>Designer</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial end -->
+
+  <!-- blood doner start -->
+  <section class="blood ptb-115">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="common_title1 text-center">
+            <p>blood owner</p>
+            <h2>We Are Blood Donor Group</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blood doner end -->
+
+  <!-- request & appoinment start -->
+  <section class="request">
+    <div class="container">
+      <div class="row">
+        <div class="">
+          <div class="current1">
+            <h4>Current Blood Request</h4>
+            <ul>
+              <li><i class="fa-solid fa-heart"></i> B+ Prahlad Nagar, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> O+ Thaltej, Ahmedabad</li>
+              <li><i class="fa-solid fa-heart"></i> A+ Gota, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> A- Bopal, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> AB+ Sanand, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> B- Sabarmati, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> O- Bapunager, Ahmedabad </li>
+              <li><i class="fa-solid fa-heart"></i> AB- Paldi, Ahmedabad </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- request & appoinment end -->
+
+  <!-- team start -->
+  <section class="team ptb-115">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12">
+          <div class="common_title text-center">
+            <p>Team members</p>
+            <h2>Meet Volunteers</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+          <div class="team_details">
+            <div class="team_img">
+              <img src="/static/landing_page/assets/images/t1.jpg" alt="" class="w-100">
+              <ul class="d-flex">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+            <div class="team_content text-center">
+              <a href="team-member.html">
+                <h5>DR.Aartiba Zala</h5>
+              </a>
+              <p>MD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+          <div class="team_details">
+            <div class="team_img ">
+              <img src="/static/landing_page/assets/images/t2.jpg" alt="" class="w-100">
+              <ul class="d-flex">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+            <div class="team_content text-center">
+              <a href="team-member.html">
+                <h5>DR.Jayrajsinh Barad</h5>
+              </a>
+              <p>PHD</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-6 col-12 mb-4">
+          <div class="team_details">
+            <div class="team_img ">
+              <img src="/static/landing_page/assets/images/t3.jpg" alt="" class="w-100">
+              <ul class="d-flex">
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+            </div>
+            <div class="team_content text-center">
+              <a href="team-member.html">
+                <h5>DR.Raj Makwana</h5>
+              </a>
+              <p>MBBS</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- team end -->
+
+  <!-- footer section start -->
+  <footer>
+    <div class="footer_top pt-23">
+      <div class="container ">
+        <div class="row footer_middle">
+          <div class="col-xl-6 col-lg-6 col-12 mb-5">
+            <div class="footer_subscrive">
+              <h6>Subscribe us for more update & news !!</h6>
+              <form action="#">
+                <input type="email" placeholder="Enter Your Email">
+                <button class="red_btn" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 col-12">
+            <div class="footer_social">
+              <ul
+                class="social_icon d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center  gap-2">
+                <li><a href="https://www.facebook.com/share/Y8oHQEb53wPmjwpM/?mibextid=qi2Omg"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/RaihankhanMalek"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/raihankhanmalek?igsh=MTVlcGYxa2k3OWs1bg=="><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="https://pin.it/6MdwevdFM"><i class="fa-brands fa-pinterest-p"></i></a></li>
+              </ul>
+              <ul
+                class="page_link d-flex justify-content-xxl-end justify-content-xl-end justify-content-lg-end justify-content-center gap-2 flex-wrap">
+                <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                <li><a href="#">/</a></li>
+                <li><a href="terms.html">Terms & Condition</a></li>
+                <li><a href="#">/</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+  <!-- mobile menu offcanvas -->
+  <div class="offcanvas offcanvas-start" id="offcanvas-mobile">
+    <div class="offcanvas-body">
+      <div class="mobile-menu">
+        <a href="index.html" class="logo py-3"><img src="/static/landing_page/assets/images/icon/red-logo.png" alt="logo"
+            class="img-fluid"></a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+
+        <ul class="accordion accordion-flush mobile_dropdown" id="accordionFlushExample">
+          <li class="accordion-item">
+            <h2><a href="#home">Home</a></h2>
+          </li>
+          <li class="accordion-item">
+            <h2><a href="#About">About Us</a></h2>
+          </li>
+          <li class="accordion-item">
+            <h2><a href="#Service">Service</a></h2>
+          </li>
+
+          <li class="accordion-item">
+            <h2><a href="#Contact">Contact</a></h2>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- right side offcanvas -->
+  <div class="offcanvas offcanvas-end right_canvas" tabindex="-1" id="offcanvasRight">
+    <div class="offcanvas-header">
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="content-top mb-100">
+        <a href="index.html">Blad Ai</a>
+        <p>Distrak Street 2SK Line, Germanygalore@inside-support.com (+125)
+          2156-2145</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Javascript Files -->
+  <script src="/static/landing_page/assets/js/jquery.min.js"></script>
+  <script src="/static/landing_page/assets/js/popper.min.js"></script>
+  <script src="/static/landing_page/assets/js/bootstrap.min.js"></script>
+  <script src="/static/landing_page/assets/js/wow.js"></script>
+  <script src="/static/landing_page/assets/js/slick.js"></script>
+  <script src="/static/landing_page/assets/js/fancybox.js"></script>
+  <script src="/static/landing_page/assets/js/counterup.min.js"></script>
+  <script src="/static/landing_page/assets/js/progress-bar.js"></script>
+  <script src="/static/landing_page/assets/js/smooth-scroll.min.js"></script>
+  <script src="/static/landing_page/assets/js/nice-select.js"></script>
+  <script src="/static/landing_page/assets/js/waypoints.js"></script>
+  <script src="/static/landing_page/assets/js/script.js"></script>
+
+</body>
+
+</html>
